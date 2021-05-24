@@ -1,0 +1,105 @@
+<main class="mixtape-main">
+  <div class="hero-head">
+    <h1>
+      Who's your favorite artist?
+      <span class="mixtape-span">Let's see. </span>
+    </h1>
+    <p>
+      Please be aware that coverart will be showing explicit content. When
+      creating coverart it is great to hear the best artist coming to me for new
+      releases coverart, album covers, mixtape covers, etc. I believe its a
+      combination of the best working with the best.
+    </p>
+  </div>
+  <div class="mixtape-flex">
+    <div class="artist-name">
+      <h2>ARTIST</h2>
+      <ul>
+        <li>Slimeball1K</li>
+        <li>DatsPolo</li>
+        <li>SouthSide Rich</li>
+        <li>One17Lando</li>
+        <li>Ike Rhein</li>
+        <li>BigBank Dontis</li>
+        <li>Slime Billy</li>
+        <li>Uptown Boom</li>
+        <li>TRUFLYFINESSE</li>
+      </ul>
+    </div>
+
+    <div class="mix-img">
+      <div>
+        <img class="mixImg" src="img/mix2.png" alt="" />
+        <img class="mixImg" src="img/mix3.png" alt="" />
+        <img class="mixImg mixImg3" src="img/mix1.png" alt="" />
+      </div>
+      <div>
+        <img class="mixImg" src="img/mix4.png" alt="" />
+        <img class="mixImg" src="img/mixtape5.png" alt="" />
+        <img class="mixImg mixImg6" src="img/mixtape6.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="back-arrow">
+    <a href="/">
+      <i class="fas fa-long-arrow-alt-left"></i>
+    </a>
+    <p>Back</p>
+  </div>
+</main>
+<nav class="nav-bar">
+  <ul class="nav-links">
+    <a href="/mixtape">Mixtapes</a>
+    <a href="/about">About</a>
+    <a href="/art">General Art</a>
+  </ul>
+  <div class="contact">
+    <h2>Stay in touch.</h2>
+    <form action="/mixtape" method="POST">
+      <div class="name-form">
+        <label for="name">Name</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          minlength="4"
+          value="<%= contact.name %> "
+        />
+      </div>
+
+      <div class="email-form">
+        <label for="email">Email</label>
+        <input
+          name="email"
+          id="email"
+          type="email"
+          value="<%= contact.email %> "
+        />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div class="errors"></div>
+  </div>
+  <footer>
+    <h4>Rew The Artist&copy; 2021</h4>
+    <ul>
+      <li>
+        <a href="https://twitter.com/RewBallout"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/rewtheartist/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/channel/UCi5Ve0SDnQe0hPBI8uZ7p9Q/featured"
+          ><i class="fab fa-youtube"></i
+        ></a>
+      </li>
+    </ul>
+  </footer>
+</nav>

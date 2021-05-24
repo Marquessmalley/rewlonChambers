@@ -1,0 +1,101 @@
+<main>
+  <div class="hero-head">
+    <h1>The Art Gallery</h1>
+    <p>
+      Throughout this gallery you will see art pieces created for Individuals
+      and Artists, Art Exhibitions, Art Prizes, Entrepreneurs, etc., from all
+      over. Mediums of all kinds and also digital graphics. Anything you need !
+    </p>
+    <span class="about-underline"></span>
+  </div>
+  <div class="main-art">
+    <div class="group-1">
+      <img class="gal-img1" src="img/art10.png" alt="" />
+      <img class="gal-img2" src="img/art7.png" alt="" />
+      <img class="gal-img3" src="img/art6.png" alt="" />
+    </div>
+
+    <div class="group-2">
+      <img class="gal-img4" src="img/art11.png" alt="" />
+      <img class="gal-img5" src="img/art16.png" alt="" />
+      <img class="gal-img6" src="img/art9.png" alt="" />
+    </div>
+    <div class="clothes-header">
+      <h1>Clothing Design</h1>
+    </div>
+
+    <div class="group-3">
+      <img class="gal-img7" src="img/art1.png" alt="" />
+      <img class="gal-img8" src="img/art2.png" alt="" />
+      <img class="gal-img9" src="img/art5.png" alt="" />
+    </div>
+
+    <div class="group-4">
+      <img class="gal-img10" src="img/art4.png" alt="" />
+      <img class="gal-img11" src="img/art17.png" alt="" />
+      <img class="gal-img12" src="img/art18.png" alt="" />
+    </div>
+  </div>
+  <div class="back-arrow">
+    <a href="/">
+      <i class="fas fa-long-arrow-alt-left"></i>
+    </a>
+    <p>Back</p>
+  </div>
+</main>
+<nav class="nav-bar">
+  <ul class="nav-links">
+    <a href="/mixtape">Mixtapes</a>
+    <a href="/about">About</a>
+    <a href="/art">General Art</a>
+  </ul>
+  <div class="contact">
+    <h2>Stay in touch.</h2>
+    <form action="/art" method="POST">
+      <div class="name-form">
+        <label for="name">Name</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          minlength="4"
+          value="<%= contact.name %> "
+        />
+      </div>
+
+      <div class="email-form">
+        <label for="email">Email</label>
+        <input
+          name="email"
+          id="email"
+          type="email"
+          value="<%= contact.email %> "
+        />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div class="errors"></div>
+  </div>
+  <footer>
+    <h4>Rew The Artist&copy; 2021</h4>
+    <ul>
+      <li>
+        <a href="https://twitter.com/RewBallout"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/rewtheartist/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/channel/UCi5Ve0SDnQe0hPBI8uZ7p9Q/featured"
+          ><i class="fab fa-youtube"></i
+        ></a>
+      </li>
+    </ul>
+  </footer>
+</nav>

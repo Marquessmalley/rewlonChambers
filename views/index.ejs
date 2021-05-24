@@ -1,0 +1,89 @@
+<main>
+  <header class="main-header">
+    <h1>Rewlon Chambers.</h1>
+    <p>Bringing visions to life</p>
+    <span class="main-underline"></span>
+  </header>
+  <section class="home-view">
+    <!-- Home Content -->
+    <div class="div-container">
+      <!-- MIXTAPES -->
+      <div class="div div1">
+        <h2>Mixtapes</h2>
+        <a href="/mixtape"
+          ><img class="main-img" src="img/lando.png" alt=""
+        /></a>
+      </div>
+
+      <!-- BIO -->
+      <div class="div div2">
+        <h2>About</h2>
+        <a href="/about"><img class="main-img" src="img/rews.png" alt="" /></a>
+      </div>
+
+      <!--     GNERAL ART     -->
+      <div class="div div3">
+        <h2>Gen.Art</h2>
+        <a href="/art"><img class="main-img" src="img/genArt.png" alt="" /></a>
+      </div>
+    </div>
+  </section>
+</main>
+<nav class="nav-bar">
+  <ul class="nav-links">
+    <a href="mixtape.html">Mixtapes</a>
+    <a href="about.html">About</a>
+    <a href="art.html">General Art</a>
+  </ul>
+  <div class="contact">
+    <h2>Stay in touch.</h2>
+    <form action="/" method="POST">
+      <div class="name-form">
+        <label for="name">Name</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          minlength="4"
+          ,
+          value="<%= contact.name %> "
+        />
+      </div>
+
+      <div class="email-form">
+        <label for="email">Email</label>
+        <input
+          name="email"
+          id="email"
+          type="email"
+          ,
+          value="<%= contact.email %> "
+        />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div class="errors"></div>
+  </div>
+  <footer>
+    <h4>Rew The Artist&copy; 2021</h4>
+    <ul>
+      <li>
+        <a href="https://twitter.com/RewBallout"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/rewtheartist/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/channel/UCi5Ve0SDnQe0hPBI8uZ7p9Q/featured"
+          ><i class="fab fa-youtube"></i
+        ></a>
+      </li>
+    </ul>
+  </footer>
+</nav>

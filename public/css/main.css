@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  overflow-x: hidden;
+  position: relative;
+  animation: opening 1.5s ease-in-out forwards;
+}
+.back-arrow {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back-arrow p {
+  margin-top: 1rem;
+}
+
+.fa-long-arrow-alt-left {
+  font-size: 2.5rem;
+  color: black;
+  margin-right: 0.5rem;
+}
+/* HOME PAGE */
+.main-header {
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+.main-underline {
+  background-color: rgb(117, 117, 117);
+  padding: 0.1rem;
+  width: 50%;
+  height: 20%;
+}
+.home-view {
+  margin-top: 2rem;
+}
+
+.div-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  flex-wrap: wrap;
+  position: relative;
+}
+.div {
+  transition: transform 0.5s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div h2 {
+  position: absolute;
+}
+.div:hover {
+  transform: scale(1.1);
+}
+
+.main-img {
+  cursor: pointer;
+  /* width: 100%; */
+}
+/* MIXTAPE PAGE */
+.mixtape-main {
+  background-color: whitesmoke;
+  width: 90%;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+}
+.hero-head {
+  min-height: 20vh;
+  width: 50%;
+  margin: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin-bottom: 1rem;
+}
+.hero-head h1 {
+  font-family: "Abril Fatface", cursive;
+}
+.hero-head p {
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+.mixtape-flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.artist-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.artist-name h2 {
+  margin-bottom: 2rem;
+}
+.artist-name li {
+  margin-bottom: 2rem;
+}
+.mix-img {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mixImg {
+  transition: transform 0.5s ease-in;
+}
+.mixImg:hover {
+  transform: scale(1.1);
+}
+
+/* ABOUT PAGE */
+.about-underline {
+  background-color: rgb(0, 255, 98);
+  padding: 0.1rem;
+  width: 50%;
+  height: 5%;
+  margin: 1rem;
+}
+.about-flex {
+  width: 80%;
+  margin: auto;
+  min-height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  color: white;
+  background-color: rgb(26, 26, 26);
+  box-shadow: 0px 0px 80px 10px rgb(85, 85, 88);
+}
+.about-img {
+  min-height: 50vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  flex: 1 1 40rem;
+}
+.vl {
+  /* min-height: 50vh; */
+  border-right: 2px solid gray;
+  height: 325px;
+  margin-right: 3rem;
+  position: absolute;
+  top: 10%;
+  left: 43%;
+}
+.about-desc {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-indent: 50px;
+  flex: 1 1 40rem;
+  font-size: 0.9rem;
+}
+.about-desc h1 {
+  font-family: "Abril Fatface", cursive;
+  margin: 2rem;
+}
+.about-desc,
+p {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+.about-span {
+  color: rgb(0, 255, 98);
+  margin-left: 0.5rem;
+}
+/* GENERAL ART PAGE */
+.main-art {
+  background-color: whitesmoke;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.group-1,
+.group-2,
+.group-3,
+.group-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.clothes-header {
+  height: 10vh;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0rem;
+  background-color: rgb(228, 221, 213);
+  font-family: "Montserrat", sans-serif;
+}
+/* Main Nav */
+.nav-header {
+  min-height: 10vh;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 90%;
+  margin: auto;
+  padding: 2rem 0;
+  z-index: 2;
+  position: relative;
+}
+
+#logo {
+  color: black;
+  text-decoration: none;
+  font-family: "Abril Fatface", cursive;
+}
+.logo-span {
+  color: rgb(0, 255, 98);
+}
+
+.line1,
+.line2 {
+  width: 3rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: black;
+  pointer-events: none;
+}
+/* BURGER NAV */
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  opacity: 1;
+  clip-path: circle(50px at 100% -10%);
+  /* webkit Makes more compatible with different browsers  */
+  -webkit-clip-path: circle(50px at 100% -10%);
+  /* min-height: 200vh; */
+}
+
+.burger {
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  flex-basis: 30rem;
+  font-family: "Abril Fatface", cursive;
+}
+.nav-links a {
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+  padding: 3rem 0rem;
+}
+
+.contact {
+  flex-basis: 30rem;
+}
+.contact h2 {
+  font-size: 3rem;
+  padding: 2rem 0rem;
+  font-family: "Abril Fatface", cursive;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+.name-form,
+.email-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+label {
+  padding: 1rem;
+}
+
+form button {
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: none;
+  width: 70%;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 2rem;
+  padding: 2rem;
+  font-family: "Abril Fatface", cursive;
+}
+footer ul {
+  list-style: none;
+  cursor: pointer;
+}
+footer ul li {
+  margin-top: 2rem;
+  transition: transform 1s ease;
+}
+footer ul li:hover {
+  transform: scale(2);
+}
+footer a {
+  color: black;
+  transition: all 3s ease;
+}
+footer a:hover {
+  color: black;
+}
+
+footer h4 {
+  color: black;
+  /* margin: 2rem; */
+}
+
+/* CONFIRMTION PAGE */
+.main-confirm {
+  min-height: 90vh;
+}
+.confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: whitesmoke; */
+  flex-wrap: wrap;
+  min-height: 50vh;
+  font-size: 2rem;
+}
+
+/* ANIMATIONS */
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1279px) {
+  .group-1,
+  .group-2,
+  .group-3,
+  .group-4 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about-flex {
+    flex-wrap: wrap;
+  }
+  .vl {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 850px) {
+  .nav-links a {
+    font-size: 1.5rem;
+  }
+  .contact label {
+    font-size: 1.5rem;
+  }
+  .contact h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .contact button {
+    padding: 0.5rem;
+    margin-left: 4rem;
+  }
+  footer a,
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 664px) {
+  .mixImg {
+    display: flex;
+    justify-content: center;
+  }
+  .confirm p {
+    font-size: 1rem;
+    line-height: 100%;
+  }
+}
+@media screen and (max-width: 567px) {
+  .nav-links a {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+}

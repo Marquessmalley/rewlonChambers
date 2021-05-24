@@ -1,0 +1,91 @@
+<main>
+  <div class="hero-head">
+    <h1>About Me.</h1>
+    <span class="about-underline"></span>
+  </div>
+  <div class="about-flex">
+    <div class="about-img"><h2>Image</h2></div>
+    <div class="vl"></div>
+    <div class="about-desc">
+      <h1>Rewlon<span class="about-span">Chambers</span></h1>
+      <p>
+        Rewlon A'men Chambers is an original artist birthed from Grand Rapids,
+        Michigan. Throughout Rewlon's career he has worked with individuals and
+        companies from all over. When asked what or who helped developed his
+        career and why, he stated "My inspiration is you, the ones who need the
+        work, want the work, love the work(Art), just as much as myself. I feel
+        good to see us win together from each piece of art created and the
+        meaning behind it ".
+      </p>
+      <p>
+        Throughout his career he looks forward to working with others from a
+        variety of backgrounds. Recently he graduated from Western Michigan
+        University with a Bachelors of Science in University Studies with a
+        minor in Interior Design. Feel free to explore and contact Rewlon
+        whenever available, and get your vision brought to life!
+      </p>
+    </div>
+  </div>
+  <div class="back-arrow">
+    <a href="/">
+      <i class="fas fa-long-arrow-alt-left"></i>
+    </a>
+    <p>Back</p>
+  </div>
+</main>
+<nav class="nav-bar">
+  <ul class="nav-links">
+    <a href="/mixtape">Mixtapes</a>
+    <a href="/about">About</a>
+    <a href="/art">General Art</a>
+  </ul>
+  <div class="contact">
+    <h2>Stay in touch.</h2>
+    <form action="/about" method="POST">
+      <div class="name-form">
+        <label for="name">Name</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          minlength="4"
+          value="<%= contact.name %> "
+        />
+      </div>
+
+      <div class="email-form">
+        <label for="email">Email</label>
+        <input
+          name="email"
+          id="email"
+          type="email"
+          value="<%= contact.email %> "
+        />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div class="errors"></div>
+  </div>
+  <footer>
+    <h4>Rew The Artist&copy; 2021</h4>
+    <ul>
+      <li>
+        <a href="https://twitter.com/RewBallout"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/rewtheartist/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/channel/UCi5Ve0SDnQe0hPBI8uZ7p9Q/featured"
+          ><i class="fab fa-youtube"></i
+        ></a>
+      </li>
+    </ul>
+  </footer>
+</nav>
