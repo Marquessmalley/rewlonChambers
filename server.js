@@ -44,4 +44,4 @@ app.use("/mixtape", mixtapeRouter);
 app.use("/art", genArtRouter);
 
 //LISTEN TO APP
-app.listen(process.envPORT || 3000, () => console.log("server started"));
+app.listen(process.env.PORT || 3000);
