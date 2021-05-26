@@ -94,6 +94,7 @@ body {
 }
 .hero-head h1 {
   font-family: "Abril Fatface", cursive;
+  text-align: center;
 }
 .hero-head p {
   margin-top: 1rem;
@@ -115,6 +116,7 @@ body {
 }
 .artist-name li {
   margin-bottom: 2rem;
+  list-style: none;
 }
 .mix-img {
   display: flex;
@@ -141,7 +143,7 @@ body {
 .about-flex {
   width: 80%;
   margin: auto;
-  min-height: 55vh;
+  min-height: 65vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -176,6 +178,7 @@ body {
   text-indent: 50px;
   flex: 1 1 40rem;
   font-size: 0.9rem;
+  width: 100%;
 }
 .about-desc h1 {
   font-family: "Abril Fatface", cursive;
@@ -417,5 +420,19 @@ footer h4 {
   .confirm p {
     font-size: 1rem;
     line-height: 100%;
+  }
+  .artist-name {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 371px) {
+  .about-desc h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .clothes-header {
+    font-size: 0.5rem;
   }
 }
