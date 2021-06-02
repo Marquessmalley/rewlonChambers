@@ -1,3 +1,4 @@
+/* GLOBAL STYLES */
 * {
   margin: 0;
   padding: 0;
@@ -16,15 +17,13 @@ body {
   justify-content: center;
   align-items: center;
 }
-.back-arrow p {
-  margin-top: 1rem;
-}
 
 .fa-long-arrow-alt-left {
   font-size: 2.5rem;
   color: black;
   margin-right: 0.5rem;
 }
+
 /* HOME PAGE */
 .main-header {
   min-height: 15vh;
@@ -64,6 +63,8 @@ body {
 }
 .div h2 {
   position: absolute;
+  font-size: 2rem;
+  letter-spacing: 10px;
 }
 .div:hover {
   transform: scale(1.1);
@@ -71,7 +72,6 @@ body {
 
 .main-img {
   cursor: pointer;
-  /* width: 100%; */
 }
 /* MIXTAPE PAGE */
 .mixtape-main {
@@ -95,10 +95,12 @@ body {
 .hero-head h1 {
   font-family: "Abril Fatface", cursive;
   text-align: center;
+  text-align: justify;
 }
 .hero-head p {
   margin-top: 1rem;
   font-family: "Montserrat", sans-serif;
+  text-align: justify;
 }
 .mixtape-flex {
   display: flex;
@@ -236,10 +238,13 @@ progress[value]::-webkit-progress-value {
 .test-desc {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   text-align: justify;
   margin-right: 2rem;
 }
-
+.test-desc p {
+  margin-top: 1rem;
+}
 .testimony p {
   font-family: "Montserrat", sans-serif;
 }
@@ -473,15 +478,43 @@ footer h4 {
   .artist-name {
     justify-content: flex-start;
   }
+
+  .test-container {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 394px) {
+  progress[value] {
+    width: 200px;
+    height: 10px;
+  }
+  .progress-bar h1,
+  .testimony h1 {
+    font-size: 1.1rem;
+  }
+  .about-underlines {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 371px) {
   .about-desc h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 1rem;
     text-align: center;
   }
   .clothes-header {
     font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 326px) {
+  progress[value] {
+    width: 100px;
+    height: 10px;
+  }
+  .test-desc {
+    font-size: 0.7rem;
   }
 }
