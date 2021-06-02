@@ -21,6 +21,7 @@ app.use("/css", express.static(__dirname + "public/css"));
 app.use("/js", express.static(__dirname + "public/js"));
 app.use("/img", express.static(__dirname + "public/img"));
 app.use(bodyParser.urlencoded({ limit: "10mb", extended: false }));
+
 //GET ROUTES LOCATIONS
 const indexRouter = require("./routes/index");
 const aboutRouter = require("./routes/about");

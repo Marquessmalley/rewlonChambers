@@ -143,56 +143,105 @@ body {
 .about-flex {
   width: 80%;
   margin: auto;
-  min-height: 65vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  position: relative;
-  color: white;
-  background-color: rgb(26, 26, 26);
-  box-shadow: 0px 0px 80px 10px rgb(85, 85, 88);
-}
-.about-img {
-  min-height: 50vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  flex: 1 1 40rem;
-}
-.vl {
-  /* min-height: 50vh; */
-  border-right: 2px solid gray;
-  height: 325px;
-  margin-right: 3rem;
-  position: absolute;
-  top: 10%;
-  left: 43%;
-}
-.about-desc {
-  min-height: 50vh;
+  min-height: 160vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  /* position: relative; */
+  color: black;
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 80px 10px rgb(85, 85, 88);
+}
+
+.about-desc {
+  /* min-height: 40vh; */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  text-indent: 50px;
-  flex: 1 1 40rem;
+  align-items: center;
+  text-indent: 20px;
   font-size: 0.9rem;
-  width: 100%;
 }
 .about-desc h1 {
   font-family: "Abril Fatface", cursive;
   margin: 2rem;
 }
-.about-desc,
-p {
+.about-desc p {
+  width: 60%;
+  text-align: justify;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 1rem;
   line-height: 1.5rem;
 }
+
 .about-span {
   color: rgb(0, 255, 98);
   margin-left: 0.5rem;
+}
+.about-underlines {
+  padding: 0.1px;
+  width: 100%;
+  margin-top: 1rem;
+  background-color: rgb(124, 124, 124);
+}
+
+.progress-bar {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  font-family: "Abril Fatface", cursive;
+  margin-top: 4rem;
+}
+
+.skill {
+  font-family: "Montserrat", sans-serif;
+}
+.skill-desc {
+  display: flex;
+  justify-content: space-between;
+}
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 300px;
+  height: 20px;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress[value]::-webkit-progress-value {
+  background-color: rgb(0, 23, 128);
+}
+
+.testimony {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Abril Fatface", cursive;
+  margin-top: 1rem;
+}
+.testimony h1 {
+  text-align: center;
+}
+.test-container {
+  display: flex;
+}
+.test-desc {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin-right: 2rem;
+}
+
+.testimony p {
+  font-family: "Montserrat", sans-serif;
 }
 /* GENERAL ART PAGE */
 .main-art {
