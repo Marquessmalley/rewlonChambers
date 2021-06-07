@@ -423,14 +423,14 @@ footer h4 {
 }
 
 /* ANIMATIONS */
-@keyframes opening {
+/* @keyframes opening {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
-}
+} */
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1279px) {
