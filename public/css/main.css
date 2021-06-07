@@ -500,7 +500,7 @@ footer h4 {
 
 @media screen and (max-width: 390px) {
   .about-desc h1 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 1rem;
     text-align: center;
   }
