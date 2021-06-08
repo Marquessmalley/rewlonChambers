@@ -33,7 +33,7 @@ timeline
 // Mixtape Page Animations
 const mixtapeTimeline = gsap.timeline();
 mixtapeTimeline
-  .from(".hero-head", { duration: 1, y: "-200%", ease: "bounce", opacity: 0 })
+  .from(".hero-head", { duration: 1, y: "-200%", ease: "in", opacity: 0 })
   .fromTo(
     ".mix-img",
     { opacity: 1, duration: 1.7, delay: 0.5, scale: 0, rotation: 720 },
