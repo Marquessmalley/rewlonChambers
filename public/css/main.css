@@ -96,6 +96,8 @@ body {
   font-family: "Abril Fatface", cursive;
   text-align: center;
   text-align: justify;
+  justify-content: space-around;
+  align-items: center;
 }
 .hero-head p {
   margin-top: 1rem;
@@ -262,7 +264,8 @@ progress[value]::-webkit-progress-value {
 .group-1,
 .group-2,
 .group-3,
-.group-4 {
+.group-4,
+.group-5 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -437,7 +440,8 @@ footer h4 {
   .group-1,
   .group-2,
   .group-3,
-  .group-4 {
+  .group-4,
+  .group-5 {
     width: 50%;
   }
 }

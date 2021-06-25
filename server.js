@@ -46,4 +46,3 @@ app.use("/art", genArtRouter);
 
 //LISTEN TO APP
 app.listen(process.env.PORT || 3000);
-console.log("hello");
