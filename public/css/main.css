@@ -265,7 +265,8 @@ progress[value]::-webkit-progress-value {
 .group-2,
 .group-3,
 .group-4,
-.group-5 {
+.group-5,
+.group-6 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,6 +282,12 @@ progress[value]::-webkit-progress-value {
   margin: 1rem 0rem;
   background-color: rgb(228, 221, 213);
   font-family: "Montserrat", sans-serif;
+}
+.gal {
+  margin: 5px;
+}
+.logo-img {
+  margin: 5px;
 }
 /* Main Nav */
 .nav-header {
